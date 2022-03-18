@@ -1,6 +1,6 @@
 {
   "name": "open-leetcode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple tool to open leetcode problems using their id",
   "main": "index.js",
   "bin": "index.js",
