@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const axios = require("axios");
-const child_process = require("child_process");
+const open = require("open");
 
 const problemID = parseInt(process.argv[2]) || 1;
 
@@ -38,12 +38,5 @@ let body = {
   console.log(`Opening ${urlToOpen}`);
 
   // open url in browser
-  let start =
-    process.platform == "darwin"
-      ? "open"
-      : process.platform == "win32"
-      ? "start"
-      : "xdg-open";
-
-  child_process.exec(`${start} "${urlToOpen}"`);
+  await open(urlToOpen);
 })();
