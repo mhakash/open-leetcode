@@ -1,0 +1,20 @@
+{
+  "name": "open-leetcode",
+  "version": "1.0.1",
+  "description": "A simple tool to open leetcode problems using their id",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "leetcode",
+    "cli",
+    "open"
+  ],
+  "author": "Mehdi Hassan Akash",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
